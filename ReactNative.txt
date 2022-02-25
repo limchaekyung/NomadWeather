@@ -1,0 +1,14 @@
+
+#React-Native 규칙
+1. div 사용X => View, import 필요
+2. 모든 텍스트는 text component에
+3. style: components에 StyleSheet.create 구분, tag 안에 style={}
+
+1. 기본적으로 모든 View는 Flex Container
+   모바일에서 Flex Direction의 기본값은 column(웹의 기본값 row)
+   Overflow가 있다고 해서 스크롤 할 수 있다는 의미는 아님
+
+2. 99.8%의 경우 너비와 높이(width, height)에 기반해서 레이아웃을 만들지 않음(icon에서는 사용)
+   수많은 스크린에서 동일한 방식으로 보이는 레이아웃(반응형 레이아웃)을 만드는 것에 대해 생각
+   부모 요소에 flex 사용, 자식 비율 조정
+
